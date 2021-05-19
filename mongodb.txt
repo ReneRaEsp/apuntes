@@ -1,0 +1,13 @@
+# Guia MongoD
+## Instalar mongodb
+sudo apt install -y mongodb
+### Mostrar si mongodb esta activo
+sudo systemctl status mongodb
+## Entrar en el shell de mongo db
+mongo
+## Mostrar bases de datos
+db
+## Mostrar bdd del sistema
+show dbs
+## Crear una base de datos
+use <nombre de la base de datos>
