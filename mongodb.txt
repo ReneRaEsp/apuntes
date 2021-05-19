@@ -10,4 +10,16 @@ db
 ## Mostrar bdd del sistema
 show dbs
 ## Crear una base de datos
-use <nombre de la base de datos>
+use ejemplo
+## Crear coleccion
+db.createCollection("ejemplo")
+## Crear coleccion con documento 
+db.productos.insert({nombre:"reloj"})
+## Buscar un elemento
+db.productos.find({nombre:"reloj"})
+## Borrar coleccion
+db.productos.drop()
+## Mostrar colecciones
+show collections
+## Borrar base de datos
+db.dropDatabase()
