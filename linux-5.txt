@@ -1,0 +1,2 @@
+# man muestra el manual de un comando en especifico
+# cal muestra un calendario

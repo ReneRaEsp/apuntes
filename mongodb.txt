@@ -22,4 +22,19 @@ db.productos.drop()
 ## Mostrar colecciones
 show collections
 ## Borrar base de datos
-db.dropDatabase()
+db.dropDatabase(
+## Crear nueva coleccion con documentos primero la creo un .json y luego con el siguiente comando la inserto
+db.productos.insert({"acaAdentroVa":"El texto del documento.json pegado"})
+## para buscar la coleccion de manera ordenada
+db.productos.find().pretty()
+## Para insertar una lista de objetos hay que insertar corchetes
+[
+{ 
+	"nombre":"elemento1",
+	"apellido":"primer elemento"
+},
+{
+	"nombre":"elemento2",
+	"apellido":"segundo elemento"
+}
+]
