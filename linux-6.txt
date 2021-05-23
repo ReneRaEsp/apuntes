@@ -1,0 +1,34 @@
+# Listar y sus opciones ls
+## Listar archivos ocultos
+ls -a 				### .bashrc es el archivo de configuracion normalmente esta oculto
+## Listar el directorio actual -d sumandole -l muestra la informaciion del directorio actual -h muestra los datos de forma legible para los humanos
+ls -dhl
+## Listar detalladamente ls -l
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+sysadmin@localhost:~$ ls -l /etc/hosts
+-rw-r--r-- 1 root root 150 Jan 22 15:18 /etc/hosts
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+-	El primer carácter, un - en el ejemplo anterior, indica el tipo de "archivo". El carácter - se usa para un archivo simple, mientras que una d se utiliza para un directorio.
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+rw-r--r--	Representa los permisos del archivo. Los permisos se analizan en un laboratorio posterior.
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+1	Representa lo que se denomina un recuento de vínculo físico (explicado más adelante).
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+root	El usuario propietario del archivo.
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+root	El grupo propietario del archivo.
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+150	El tamaño del archivo en bytes.
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Jan 22 15:18	La fecha/hora en que la el archivo fue modificado por última vez.
+
+## Listado recursivo ls -R /etc/udev lista los subdirectorios ### solo se debe listar recursivamente directorios sin muchos subdirectorios ya que la salida seria muy extensạ
+
+## Copiar con una salida que indique que se copio exitosamente -v --verbose ### Para preservar los atributps del archivo -p
+cp -vp
+## Para copiar todos los archivos de un directorio se utiliza el la opcion -R
+cp -R 
+## Se puede borrar mas de un archivo a la vez con rm 
+
+
+
