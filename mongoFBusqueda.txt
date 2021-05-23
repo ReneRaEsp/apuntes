@@ -1,0 +1,39 @@
+# Usar diferentes funciones de busqueda en MongoDB
+
+## Buscar todos los documentos de una colección
+db.alumnos.find()
+
+## Buscar solo los de una categoria indicada
+db.alumnos.find({"edad" : 20}) ### Para mostrar de manera mas comprensible usar .pretty()
+### Para refinar la busqueda agregar mas campos dentro del objeto separados por una coma ','
+db.alumnos.find({"edad":20, "grado": "Universitario"}).pretty()
+
+## Para mostrar solo los documentos que tengan determinado campo
+db.alumnos.find({"datosUniversitarios":{$exists:true}}).pretty()
+### Para mostrar los documentos que no posean ese campo al contrario se les pasa un false
+db.alumnos.find({"datosUniversitarios":{$exists:false}}).pretty()
+
+## Mostrar solo un documento de una busqueda. Para mostrar solo un documento se utiliza la función findOne(). esta funcion no admite pretty()
+db.alumnos.findOne({edad:20})
+
+## Mostrar solamente uno o varios campos se pasa un objeto con el campo a mostrar y se le asigna el valor de 1
+db.alumnos.find({edad:20},{nombre:1,edad:1})
+
+## Mostrar todos menos uno o menos varios campos se le asigna el valor de 0 a los campos a no mostrar
+db.alumnos.find({edad:20}, {"datosUniversitarios":0})
+
+## Ordenar documentos por defecto ordena por primero en creacion a ultimo
+### Para ordenar se utiliza la funcion sort pasando el campo por el cual se va a ordenar junto con el valor de 1
+db.alumnos.find().sort(edad:1)
+### en caso de numeros ordena de menor a mayor y en letras por orden alphabetico
+### se puede conbinar con la funcion de filtrado
+
+## Para ordenar en sentido inverso simplemente se pasa el valor -1 al campo por el cual se ordenaran los documentos
+db.alumnos.find({grado:"Preparatoria"}).sort({edad:-1})
+
+## Solo mostrar una cantidad de registros
+db.alumnos.find().limit(2)
+### Contar cuantos documentos tienes en la busqueda
+db.alumnos.find({edad:20}).count()
+
+
