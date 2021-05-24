@@ -36,4 +36,4 @@ db.alumnos.find().limit(2)
 ### Contar cuantos documentos tienes en la busqueda
 db.alumnos.find({edad:20}).count()
 
-
+_
