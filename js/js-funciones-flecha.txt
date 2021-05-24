@@ -1,0 +1,17 @@
+# Funciones Flecha en JavaScript
+## Funcion clasica ### Sintaxis
+function miFuncion(){
+	console.log('saludos desde mi funcion')
+}
+### se llama de la siguiente forma
+miFuncion()
+## Funcion flecha ### Sintaxis
+const miFuncionFlecha = () =>{
+	console.log('saludos desde mi funcion flecha')
+}
+### llamado
+miFuncionFlecha()
+
+## funcion flecha en una sola linea
+const miFFEUL = () => console.log('saludos desde mi funcion flecha en una linea')
+

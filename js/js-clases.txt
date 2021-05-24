@@ -1,0 +1,34 @@
+# clases en JavaScript
+## Sintaxis
+
+class Persona {
+	constructor(nombre, apellido){
+		this.nombre = nombre
+		this.apellido = apellido
+	}
+}
+
+### Los nombres de las clases deben comenzar con mayusculas
+## utilizar la clase para crear un nuevo objeto de su tipo
+
+let persona1 = new Persona("Pedro", "Perez")
+
+# Metodos get y set en JavaScript
+## Sintaxis
+
+get nombre (){
+	return this.nombre
+}
+
+set nombre(nombre){
+	this.nombre = nombre
+}
+
+### Llamar metodos get y set
+#### De la siguiente manera se llama indirectamente al metodo get
+console.log(persona1.nombre)
+#### Llamada al metodo set
+persona1.nombre = 'Juan Carlos'
+
+
+
