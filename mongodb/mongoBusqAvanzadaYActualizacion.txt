@@ -1,0 +1,8 @@
+# Busqueda Avanzada y Actualización de datos
+## Listar alumnos (solo su nombre) utilizando funcion flecha este metodo lisa a los alumnos en el orden en el que fueron creados
+db.alumnos.find().forEach(alumno=>print("Nombre: " + alumnos.nombre))
+## agregando la funcion sort({"nombre":1}) mas el campo a tomar encuenta para ordenar con el numero 1 se ordena en orden alfabetico 
+db.alumnos.find().sort({"nombre":1}).forEach(alumno=>print("Nombre: " + alumno.nombre))
+## agregando un -1 al campo a ordenar se ordena de forma inversa
+db.alumnos.find().sort({"nombre":-1}).forEach(alumno=>print("Nombre: " + alumno.nombre))
+

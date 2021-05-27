@@ -1,0 +1,6 @@
+#Compresión de archivos
+## Para comprimir un archivo se utiliza el comando gzip mas el archivo a comprilir
+## el comando gzip -l da información de cuanto pesa un archivo compreso y sin comprimir
+## Con el comando gunzip mas el archivo se descomprime dicho fichero
+## Hay otro par de comandos que operan prácticamente idénticamente al gzip y gunzip. Éstos son el bzip2 y bunzip2. Las utilidades del bzip utilizan un algoritmo de compresión diferente (llamado bloque de clasificación de Burrows-Wheeler frente a la codificación Lempel-Ziv que utiliza gzip) que puede comprimir los archivos más pequeños que un gzip a costa de más tiempo de CPU. Puedes reconocer estos archivos porque tienen una extensión .bz o .bz2 en vez de .gz.
+## bzip2 y bunzip2
