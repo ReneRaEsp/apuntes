@@ -3,6 +3,8 @@
 sudo apt install -y mongodb
 ### Mostrar si mongodb esta activo
 sudo systemctl status mongodb
+### Activar el servidio de mongo db
+sudo systemctl start mongodb
 ## Entrar en el shell de mongo db
 mongo
 ## Mostrar bases de datos
